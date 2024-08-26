@@ -1,6 +1,6 @@
-**The folowing are project/practices assigned by The Odin Projec on various subjects**
+### The folowing are project/practices assigned by The Odin Projec on various subjects**
 
-### SQL ZOO
+# SQL ZOO
 [where the question are from](https://sqlzoo.net/wiki/SQL_Tutorial)
 
 *Used to practices Databases using SQL*
