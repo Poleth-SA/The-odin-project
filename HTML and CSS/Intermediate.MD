@@ -196,16 +196,71 @@
                 font-family: roboto;
             }
             ```
-.card-heading {
-  position: absolute;
-}
 - Fixed Positioning
-    - `position: fixed`
+    - `position: fixed`:
         - Element fixed relative to the viewport (browser window).
         - Stays in place while scrolling.
         - Use Cases: Navigation bars and Floating chat buttons
 - Sticky Positioning
-    - `position: sticky`
+    - `position: sticky`:
         - Behaves like normal until scrolling past a threshold, then acts like `fixed`.
         - Remains in the document flow.
         - Use Cases: Section headings and Elements that should stick in view while scrolling
+
+# CSS Fuctions
+- CSS functions have a syntax like `function(arg1, arg2, ...)`.
+- Functions perform specific tasks and use arguments inside parentheses.
+
+- What is a CSS Function?
+    - Functions:
+        - Reusable pieces of code.
+        - Accept arguments in parentheses.
+        - Examples: `rgb()`, `linear-gradient()`
+    - No Custom Functions:
+        - CSS only uses built-in functions.
+    - common fuctions:
+        - calc()
+            - Purpose: Perform calculations.
+            - Usage: Mix units (e.g., `rem`, `px`, `vh`).
+            - Example:
+            ```:root {
+                    --header: 3rem;
+                    --footer: 40px;
+                    --main: calc(100vh - calc(var(--header) + var(--footer)));
+                }
+            ```
+        - `min()`:
+            - Purpose: Set a value to the smallest one given.
+            - Usage: Make elements responsive.
+            - Example:
+            ```#iconHolder {
+                    width: min(150px, 100%);
+                    height: min(150px, 100%);
+                }
+            ```
+        - `max()`:
+            - Purpose: Set a value to the largest one given.
+            - Usage: Ensure a minimum value.
+            - Example: 
+            ```width: max(100px, 4em, 50%);```
+        - `clamp()`:
+            - Purpose: Create fluid and responsive values.
+            - Usage: Set a value with a minimum, ideal, and maximum.
+            - Example:
+            ```h1 {
+                    font-size: clamp(320px, 80vw, 60rem);
+                }
+            ```
+            - Values:
+                - Smallest value: `320px`
+                - Ideal value: `80vw`
+                - Largest value: `60rem`
+# Custom Properties
+- Custom Properties (CSS Variables):
+    - Allow referencing a value multiple times.
+    - Update one value to change it everywhere it's used.
+    - Useful for consistent styling and theming.
+
+
+
+
