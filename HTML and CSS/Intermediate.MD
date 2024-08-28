@@ -126,4 +126,86 @@
     - Useful for creating effects and layering.
 
 # Advanced Selectors:
+- Child and sibling combintors
+    - `>` (child combinator)
+        - selects direct children
+        - Examples: `main > div` selects only direct child `div`s of `main`
+    - `+` (adjncet Sibling combinator)
+        - selects the next sibling immidiately after
+        - Examples: `.group1 + div` selects the `div` right after `.group1`.
+    - `~` (General Sibling Combinator)
+        - Selects all siblings after the specified element.
+        - Example: .group1 ~ div selects all .group1 siblings after it.
+- Pseudo-Classes
+    -`:focus`: Applies to elements currently selected by the user.
+    - `:hover`: Applies to elements under the user's mouse pointer.
+    - `:active`: Applies to elements being clicked.
+    - `:link`: Styles unvisited links.
+    - `:visited`: Styles visited links.
+    - `:first-child`: Selects the first child of a parent.
+    - `:last-child`: Selects the last child of a parent.
+    - `:nth-child(n)`: Selects the nth child. Use 3n for every 3rd child, 3n+3 for every 3rd starting from the 3rd.
+- Pseudo-Elements
+    - `::marker`: Styles list item markers (bullets/numbers).
+    - `::first-letter`: Styles the first letter of a block of text.
+    - `::first-line`: Styles the first line of a block of text.
+    - `::selection`: Styles the text selected by the user.
+    - `::before`: Inserts content before an element's content.
+    - `::after`: Inserts content after an element's content.
+- Attribute Selectors
+    - `[attribute]`: Selects elements with the specified attribute.
+    - `[attribute="value"]`: Selects elements where the attribute equals the value.
+    - `[attribute^="value"]`: Selects elements where the attribute value starts with "value".
+    - `[attribute$="value"]`: Selects elements where the attribute value ends with "value".
+    - `[attribute*="value"]`: Selects elements where the attribute value contains "value".
 
+# Positioning
+- Static Positioning
+    - Default position for elements.
+    - `top`, `right`, `bottom`, `left` do not affect position.
+- Relative Positioning
+    - Similar to static, but `top`, `right`, `bottom`, `left` adjust position relative to its normal place.
+- Absolute Positioning
+    - `position: absolute`: 
+        - Positions element at a specific point on the screen.
+        - Removed from the normal document flow.
+        - Positioned relative to the nearest positioned ancestor (not static).
+        - Use Cases: Modals, Image captions and Icons on top of other elements
+    - **Important Note:**
+        - Use for specific cases. Prefer flexbox or grid for layout.
+        - Example:
+            ```css
+            .card-container {
+                position: relative;
+                width: 100%;
+            }
+                .card-image {
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+            }
+            .card-body {
+                position: absolute;
+                width: 100%;
+                background: black;
+                opacity: 0.6;
+                color: white;
+                top: 8rem;
+                text-align: center;
+                font-size: 1.2em;
+                font-family: roboto;
+            }
+            ```
+.card-heading {
+  position: absolute;
+}
+- Fixed Positioning
+    - `position: fixed`
+        - Element fixed relative to the viewport (browser window).
+        - Stays in place while scrolling.
+        - Use Cases: Navigation bars and Floating chat buttons
+- Sticky Positioning
+    - `position: sticky`
+        - Behaves like normal until scrolling past a threshold, then acts like `fixed`.
+        - Remains in the document flow.
+        - Use Cases: Section headings and Elements that should stick in view while scrolling
