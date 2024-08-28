@@ -1,9 +1,9 @@
-Cheatsheets:
-- Emmets: https://docs.emmet.io/cheat-sheet/
-- CSS: https://htmlcheatsheet.com/css/ 
-- HTML: https://htmlcheatsheet.com/
+# Cheatsheets:
+- [Emmets](https://docs.emmet.io/cheat-sheet/)
+- [CSS](https://htmlcheatsheet.com/css/)
+- [HTML](https://htmlcheatsheet.com/)
 
-Emmets:
+# Emmets:
 - Emmets are built inot VS code to help write code in HTML and CSS faster.
 - writting '!' will give you the basic HTML structure.
 - The basic HTML structure consist of 
@@ -19,7 +19,7 @@ Emmets:
     </body>
     </html>
 
-SVG:
+# SVG:
 - SVG stands for Scalable Vector Graphics.
 - SVG are common image format used in web development.
 - They are often used for Icons, Graphs/Charts, Large simple images, Patterned backgrounds, and applying effect to other elements.
@@ -32,59 +32,59 @@ SVG:
 - elements such as <circle>, <rect>, <path>, <text>, <polygon>, <path> and <text> can be used to create shapes and text.
 - attributes such as fill, stroke, stroke-width, and d are used to style the shapes.
 
-Tables:
+# Tables:
 - HTML tables are used to display data in a two-dimensional format, consisting of rows and columns.
 - They are created using <table></table> tags, with elements for rows, columns, headers, etc., placed inside.
 - HTML tables might not be as commonly used as other elements like buttons or lists, but they are ideal for specific data presentation needs.
 - Advanced table features can be tricky to set up, but creating basic tables is straightforward.
 
-Default Style:
+# Default Style:
 - Browsers automatically add basic styles to every webpage, like making <h1> headings bigger and <a> links blue and underlined.
 - These default styles can be different depending on the browser.
 - You can write your own CSS to change or remove these default styles.
 - Some developers use "CSS resets" to clear out the browser's default styles, making it easier to apply their own styles consistently across all browsers.
 - Using a CSS reset is optional; you can use a prebuilt one, make your own, or skip it altogether. It’s up to you.
 
-CSS Units:
+# CSS Units:
 - Used to set sizes in CSS, divided into absolute and relative types.
 
-absolute units:
+# absolute units:
 - Stay the same size no matter where they are used.
 - px (pixels) is the main one you should use for web design.
 - Other units like inches (in) and centimeters (cm) are mostly for print.
 
-relative units:
+# relative units:
 - Change size depending on where they are used.
 - em: Based on the font size of the element (or its parent). Example: If the font size is 16px, 4em would be 64px.
 - rem: Based on the root element's font size. It’s easier to use than em because it doesn’t depend on the parent’s font size.
 
-Use rem:
+# Use rem:
 - Best for setting font sizes on a website.
 - Respects user preferences for font size, making text easier to read.
 
-Viewport Units:
+# Viewport Units:
 - 'vh': 1% of the screen height.
 - 'vw': 1% of the screen width.
 - Good for making things fit the screen size, like full-screen sections.
 
-More Text Syles:
+# More Text Syles:
 - Fonts: Learn how to use and customize fonts in CSS.
 - System Font Stack:
     - If a font isn't available, a fallback font will be used.
     - Example: font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 - web fonts:
     -Import fonts from online sources like Google Fonts.
-    - Example: <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    - Example: `<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">`
     - Make sure to include a fallback font.
 - self-hosted fonts:
     - Download and use fonts yourself with @font-face.
-    - Example: @font-face
+    - Example: '@font-face
                     { font-family: my-cool-font; 
                     src: url(../fonts/the-font-file.woff);
                     } 
                     h1 { 
                         font-family: my-cool-font, sans-serif;
-                    }
+                    }'
 - Text Styles:
     - font-style: Use for italic text.
         - Example: font-style: italic;
@@ -94,13 +94,13 @@ More Text Syles:
     - text-shadow: Add shadow to text.
 - Ellipsis:
     -Use text-overflow: ellipsis; to truncate overflowing text with “...”:
-    - Example: .overflowing {
+    - Example: '.overflowing {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                }
+                }'
 
-More CSS Properties:
+# More CSS Properties:
 - background:
     - background is a shorthand for several properties like color, image, position, size, and repeat.
     - You can also use these properties individually for clarity.
@@ -118,4 +118,4 @@ More CSS Properties:
     - Adjusts the transparency of an element.
     - Useful for creating effects and layering.
 
-Advancec Selectors:
+# Advancec Selectors:
