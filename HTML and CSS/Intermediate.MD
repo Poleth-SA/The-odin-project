@@ -7,7 +7,7 @@
 - Emmets are built inot VS code to help write code in HTML and CSS faster.
 - writting '!' will give you the basic HTML structure.
 - The basic HTML structure consist of 
-    <!DOCTYPE html>
+    '<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <body>
 
     </body>
-    </html>
+    </html>'
 
 # SVG:
 - SVG stands for Scalable Vector Graphics.
