@@ -1,7 +1,3 @@
-[where the question are from](https://sqlzoo.net/wiki/SQL_Tutorial)
-- This is where the questions from the other files are, the work and answers I gave for them.
-- 13 sections were done as practice.
-
 # Databases
 - Purpose of Databases:
     - Store and manage user data.
@@ -69,3 +65,8 @@
 - Marketing Analyst
 - Financial Analyst
 - and more!...
+
+# Practice Problems
+- [where the question are from](https://sqlzoo.net/wiki/SQL_Tutorial)
+- This is where the questions from the other files are, the work and answers I gave for them.
+- 13 sections were done as practice.
