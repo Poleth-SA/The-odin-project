@@ -1,6 +1,6 @@
 [where the question are from](https://sqlzoo.net/wiki/SQL_Tutorial)
-- This is Where the questions comfrom the other files are the work and answers I gaved for them
-- 13 sections where done as practice
+- This is where the questions from the other files are, the work and answers I gave for them.
+- 13 sections were done as practice.
 
 # Databases
 - Purpose of Databases:
@@ -9,20 +9,20 @@
 - Databases:
     - Operate behind the scenes in web applications.
     - Don’t be intimidated—learning to interact with them is key.
-- Basics of SQL (Structured Query Language)
+- Basics of SQL (Structured Query Language):
     - Used to interact with databases.
     - Has a simple syntax with a few key verbs.
 
 # Databases and SQL
--**Why Use SQL?**
+- **Why Use SQL?**
     - SQL queries run directly in the database, making them faster than processing data in application code.
 - Purpose:
     - Databases store and manage data for web applications.
     - SQL (Structured Query Language) helps you query and manipulate this data.
-- SQL Basics
+- SQL Basics:
     - What is SQL?
-        -  A language to interact with databases.
-        - Allows you to ask questions, and add or change data.
+        - A language to interact with databases.
+        - Allows you to ask questions and add or change data.
     - Simple Examples:
         - Show users who signed up with a specific promotion code.
         - List comments by a user, sorted by topic and date.
@@ -33,7 +33,7 @@
     - **Schema**: Structure of the database, including tables and their columns.
 
 # SQL Commands
-- Basics Commands:
+- Basic Commands:
     - `SELECT`: Retrieve data.
     - `INSERT INTO`: Add new data.
     - `UPDATE`: Modify existing data.
@@ -43,22 +43,22 @@
     - `LIKE`: Search for patterns.
     - `DISTINCT`: Get unique values.
 - Aggregate Functions:
-    - ` AVG()`, `COUNT()`, `SUM()`: Calculate values across rows.
+    - `AVG()`, `COUNT()`, `SUM()`: Calculate values across rows.
 - Indexes:
-    -  Improve search speed for columns.
+    - Improve search speed for columns.
 
 # Joining Tables
--Types of Joins:
+- Types of Joins:
     - `INNER JOIN`: Matches rows from both tables.
     - `LEFT OUTER JOIN`: All rows from the left table, with matched rows from the right table.
     - `RIGHT OUTER JOIN`: All rows from the right table, with matched rows from the left table.
     - `FULL OUTER JOIN`: All rows from both tables, with NULLs where there’s no match.
 
 # Grouping and Filtering
-- `GROUP BY`: Organize results into groups
-- `HAVING`: Filter groups based on aggregate fuction
+- `GROUP BY`: Organize results into groups.
+- `HAVING`: Filter groups based on aggregate function.
 
-# Which careers uses SQL?
+# Which careers use SQL?
 - Data Analyst
 - Database Administrator (DBA)
 - Data Scientist
@@ -68,4 +68,4 @@
 - System Analyst
 - Marketing Analyst
 - Financial Analyst
-_ and more!...
+- and more!...
