@@ -219,7 +219,7 @@
     - No Custom Functions:
         - CSS only uses built-in functions.
     - common fuctions:
-        - calc()
+        - `calc()`:
             - Purpose: Perform calculations.
             - Usage: Mix units (e.g., `rem`, `px`, `vh`).
             - Example:
@@ -260,7 +260,115 @@
     - Allow referencing a value multiple times.
     - Update one value to change it everywhere it's used.
     - Useful for consistent styling and theming.
+    - Keeps your colors, fonts, etc., consistent.
+    - Makes it easy to switch between themes, like dark and light mode.
+- Using Custom Properties:
+    - Declaring a custom property: `--property-name: value;`
+    - Accessing it with `var(--property-name)` in CSS
+- Fallback Values:
+    - `var()` function accepts a fallback value if the custom property is invalid or undeclared.
+    - Example: `color: var(--undeclared-property, fallback-value);.`
+- Scope of Custom Properties:
+    - Scope is determined by the selector where the property is declared.
+    - Properties apply to the selector and its descendants.
+- The :root Selector:
+    - Declaring custom properties on `:root` makes them accessible globally in the CSS file.
+    - `:root` is like the `html` selector but with higher specificity.
+- Creating Themes with Custom Properties:
+    - Custom properties can be redefined in different contexts (e.g., `dark` and `light` themes).
+    - Useful for global styling and theme switching.
+- Using Media Queries:
+    - `prefers-color-scheme` media query adapts themes based on user’s OS/browser settings.
+    - Supports `dark` and `light` values for automatic theme adjustments.
+    - Important for respecting user preferences while allowing manual theme changes.
 
-
-
-
+# Form Basics
+- **Forms in HTML**: Forms are critical as they collect user data for backend processing.
+- Form Structure:
+    - `<form>` element acts as a container for inputs.
+    - Two essential attributes:
+        - `action`: Specifies where the form data should be sent.
+        - `method`: Specifies the HTTP request method (GET or POST).
+- Form Controls:
+    - Elements users interact with, like text boxes, dropdowns, checkboxes, and buttons.
+- Input Element:
+    - Most versatile form control.
+    - Different types include `text`, `email`, `password`, `number`, and `date`.
+    - `label` tags help users understand what data to enter.
+    - `placeholder` attribute provides example input text.
+    - `name` attribute identifies input data in form submissions.
+- Textarea: Used for multi-line text input. It can be resized and has customizable rows and cols.
+- Selection Elements:
+    - `<select>` for dropdowns.
+    - `<option>` for dropdown items.
+    - `<optgroup>` for grouping options.
+- Radio Buttons:
+    - Allow selection of one option among several.
+    - Grouped by the same `name` attribute.
+- Checkboxes:
+    - Allow multiple selections.
+    - Can be used for individual choices or toggles.
+- Buttons:
+    - Submit button (`type="submit"`): Submits form data.
+    - Reset button (`type="reset"`): Clears form data.
+    - Generic button (`type="button"`): Used for custom actions with JavaScript.
+- Organizing Forms:
+    - `<fieldset>`: Groups related form controls.
+    - `<legend>`: Provides a caption for a fieldset.
+- Styling Forms:
+    - Default browser styles may differ.
+                    --footer: 40px;    - Custom styling may be tricky for some form controls like radio buttons and checkboxes.
+                    --main: calc(100vh - calc(var(--header) + var(--footer)));    - Some elements like date pickers are difficult to style and may require JavaScript solutions.
+- **Examples of Code Snippets:**
+    - Basic Form Structure:
+    ```html
+    <form action="example.com/path" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="John">
+    </form>
+    ```
+                    height: min(150px, 100%);    - Textarea:
+    ```html
+    <textarea rows="20" cols="60">Some initial content</textarea>
+    ```
+    - Select Dropdown:
+    ```html
+    <select name="Car">
+        <option value="mercedes">Mercedes</option>
+        <option value="volvo" selected>Volvo</option>
+    </select>
+    ```
+    - Radio Buttons:
+    ```html
+    <h1>Ticket Type</h1>
+    <div>
+        <input type="radio" id="child" name="ticket_type" value="child">
+        <label for="child">Child</label>
+    </div>
+                - Ideal value: `80vw`    <div>
+        <input type="radio" id="adult" name="ticket_type" value="adult" checked>
+        <label for="adult">Adult</label>
+    </div>
+    ```
+    - Checkbox:
+    ```html
+    <h1>Pizza Toppings</h1>
+    <div>
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="sausage">Sausage</label>
+    </div>
+    <div>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+    </div>
+    ```
+    - Fieldset and Legend:
+    ```html
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+    ```
