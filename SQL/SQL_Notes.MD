@@ -56,4 +56,16 @@
 
 # Grouping and Filtering
 - `GROUP BY`: Organize results into groups
-- `HAVING`: Filter groups based on aggregate fuctions
+- `HAVING`: Filter groups based on aggregate fuction
+
+# Which careers uses SQL?
+- Data Analyst
+- Database Administrator (DBA)
+- Data Scientist
+- Software Developer
+- Business Intelligence (BI) Developer
+- Data Engineer
+- System Analyst
+- Marketing Analyst
+- Financial Analyst
+_ and more!...
