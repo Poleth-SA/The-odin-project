@@ -327,7 +327,7 @@
         <input type="text" id="first_name" name="first_name" placeholder="John">
     </form>
     ```
-                    height: min(150px, 100%);    - Textarea:
+    - Textarea:
     ```html
     <textarea rows="20" cols="60">Some initial content</textarea>
     ```
